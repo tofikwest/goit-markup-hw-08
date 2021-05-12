@@ -1,0 +1,39 @@
+:root {
+  --title-settingss-color: #212121;
+  --navigation-text-color: #212121;
+  --contact-us-font: #757575;
+  --contact-us-icon-color: #757575;
+  /* --primary-text-color: #212121; */
+  --primary-text-color: #757575;
+
+  --main-title-text-color: #ffffff;
+  --main-title-backround: #2f303a;
+  --main-button-background: #188ce8;
+  --accent-color: #2196f3;
+  --background-buttons: #f5f4fa;
+  --preference-table-color: #757575;
+  --team-background-color: #f5f4fa;
+  --team-card-disagn: #ffffff;
+  --team-table-color: #757575;
+  --footer-background-color: #2f303a;
+  --footer-logo-color: #f5f4fa;
+  --footer-our-address-color: #ffffff;
+  --join-title-text-color: #ffffff;
+  --join-icon-logo-color: #ffffff;
+  --buttons-text-color: #212121;
+  --portfolio-table-color: #757575;
+  --portfolio-button-active: #ffffff;
+  --portfolio-button-background: #f5f4fa;
+  --card-set-gap: 30px;
+  --modal-background: #ffffff;
+}
+.body {
+  color: var(--primary-text-color);
+
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.18;
+}

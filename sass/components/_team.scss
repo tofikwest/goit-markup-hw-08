@@ -1,0 +1,100 @@
+.team {
+  background-color: var(--team-background-color);
+
+  &__title-settings {
+    margin-bottom: 50px;
+
+    color: var(--title-settingss-color);
+
+    font-weight: bold;
+    font-size: 36px;
+
+    text-align: center;
+
+    line-height: 1.16em;
+    letter-spacing: 0.03em;
+  }
+}
+
+.main-team {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  &__team-card-disagn {
+    background: var(--team-card-disagn);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+
+    padding-bottom: 30px;
+  }
+  &__photo-box {
+    margin-bottom: 30px;
+  }
+  &__table {
+    /* color: var(--team-table-color); */
+    text-align: center;
+
+    margin-top: 10px;
+    /* padding-bottom: 30px; */
+
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em;
+  }
+  &__worker-name {
+    margin: 0;
+    text-align: center;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 1.18em;
+  }
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 16px;
+  &__social-link-list {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__social-link--circle {
+    display: flex;
+
+    align-items: center;
+    height: 44px;
+    width: 44px;
+
+    fill: #afb1b8;
+
+    background-size: 20px;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      background-color: var(--accent-color);
+      fill: #ffffff;
+    }
+  }
+  &__team-soc-icon {
+    height: 20px;
+  }
+}
