@@ -5,6 +5,10 @@
   justify-content: space-around;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
+  // Убрал секцию "Чем мы занимаемся"
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   &__item {
     position: relative;
@@ -38,6 +42,10 @@
 }
 
 .projects__title-settings {
+  // Убрал заголовок "Чем мы занимаемся"
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   color: var(--title-settingss-color);
   margin-bottom: 50px;
 

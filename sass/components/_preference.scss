@@ -13,6 +13,10 @@
     margin-top: calc(-1 * var(--card-set-gap));
 
     font-size: 14px;
+    // Задал дисплей блок что бы они шли друг-за-другом
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
   }
   &__thumb-1 {
     display: flex;
@@ -47,6 +51,10 @@
     letter-spacing: 0.03em;
 
     text-transform: uppercase;
+    // Заголовкам дал центрирование
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__table-of-contents {
     color: var(--preference-table-color);

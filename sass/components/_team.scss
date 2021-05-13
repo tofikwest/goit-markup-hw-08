@@ -13,6 +13,9 @@
 
     line-height: 1.16em;
     letter-spacing: 0.03em;
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -23,6 +26,11 @@
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 
+// дал внутренний отступ карточкам
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding-left: 15px;
+  }
   &__team-card-disagn {
     background: var(--team-card-disagn);
 
@@ -33,13 +41,16 @@
   &__item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
 
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    margin-left: 15px;
+    margin-top: 15px;
 
     padding-bottom: 30px;
   }
   &__photo-box {
     margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
   }
   &__table {
     /* color: var(--team-table-color); */

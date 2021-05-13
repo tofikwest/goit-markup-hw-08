@@ -1,9 +1,11 @@
 .down-part {
   display: flex;
-  /* justify-content: center; */
   background-color: var(--footer-background-color);
 
   height: auto;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer-logo {
@@ -22,6 +24,12 @@
 
   &__part-logo {
     color: var(--accent-color);
+  }
+  // Оцентрировал логотип и уменьшил шрифт до 24пикселей
+  @media screen and (max-width: 767px) {
+    margin-left: 163px;
+    margin-right: 163px;
+    font-size: 24px;
   }
 }
 
@@ -87,6 +95,12 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .down-part-left-block {
@@ -94,14 +108,23 @@
   justify-content: space-between;
   align-items: baseline;
   flex-basis: calc((100% - 30px) / 2);
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+  }
 }
 .footer__left-content {
-  // display: flex;
-  // flex-direction: column;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+
+  }
 
   flex-basis: calc((100% - 30px) / 2);
 
   // margin-right: 70px;
+  
 }
 
 .footer-join {
@@ -110,6 +133,7 @@
   flex-basis: calc((100% - var(--card-set-gap)) / 2);
 
   // padding-top: 12px;
+
 }
 
 .footer-join__join-title {
@@ -165,6 +189,9 @@
 }
 
 .footer-subscribe-form {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
   display: flex;
   align-items: center;
 
@@ -180,6 +207,10 @@
 
     color: #ffffff;
     background-color: inherit;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);

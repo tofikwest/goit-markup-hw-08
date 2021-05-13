@@ -8,6 +8,9 @@
   text-align: center;
   line-height: 1.16em;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 .clients-list {
   display: flex;
@@ -16,11 +19,16 @@
   margin-left: -30px;
   margin-top: -50px;
 
+  
   &__item {
     display: flex;
     flex-basis: calc(100% / 6 - 30px);
     margin-left: 30px;
     margin-top: 50px;
+    // Для моб версии лого клиентов по 2 в калонке
+    @media screen and (max-width: 767px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
   }
 
   &__clients-link-logo {

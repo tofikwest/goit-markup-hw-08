@@ -1,14 +1,30 @@
 .section-pos.main {
   padding-top: 200px;
   padding-bottom: 200px;
+  // Задал свои внутренние отступы для моб версии
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
 }
-
-.section-pos.down-part {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.section-pos {
+.section-pos.preference {
   padding-top: 94px;
   padding-bottom: 94px;
+  // Добавил отступ секции preference
+  @media screen and(max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
 }
+// дал отступ секции команда
+.section-pos.team,
+// дал отступ секции клиенты
+.section-pos.container,
+.section-pos.down-part {
+  @media screen and(max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+

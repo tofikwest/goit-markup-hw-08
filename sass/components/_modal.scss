@@ -16,6 +16,13 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+// Сделал липучку модального окна для телефона и поставил ширину и высоту
+  @media screen and (max-width: 1199px) {
+    position: fixed;
+    width: 450px;
+    height: 609px;
+  }
 
   &__text-title {
     margin-bottom: 12px;
