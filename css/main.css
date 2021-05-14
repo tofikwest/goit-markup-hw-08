@@ -106,11 +106,6 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo:hover,
-.logo:focus {
-  color: #2196f3;
-}
-
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
