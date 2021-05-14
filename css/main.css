@@ -231,6 +231,8 @@ img {
 
 .modal {
   position: relative;
+  height: 100vh;
+  overflow: scroll;
   padding: 40px;
   background-color: #ffffff;
   animation-duration: 250ms;
