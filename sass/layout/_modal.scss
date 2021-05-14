@@ -1,8 +1,12 @@
 .modal__title {
+  display: flex;
+  align-self: center;
+  text-align: center;
+
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
+  // line-height: 1.15;
+  // text-align: center;
   color: $title-color;
 }
 
